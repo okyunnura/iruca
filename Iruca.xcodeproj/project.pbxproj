@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7ADE275A1E24BE5A006B074F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADE27591E24BE5A006B074F /* AppDelegate.swift */; };
+		7ADE275C1E24BE5A006B074F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADE275B1E24BE5A006B074F /* ViewController.swift */; };
+		7ADE275F1E24BE5A006B074F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ADE275D1E24BE5A006B074F /* Main.storyboard */; };
+		7ADE27611E24BE5A006B074F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ADE27601E24BE5A006B074F /* Assets.xcassets */; };
+		7ADE27641E24BE5A006B074F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ADE27621E24BE5A006B074F /* LaunchScreen.storyboard */; };
+		7ADE276F1E24BE5A006B074F /* IrucaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADE276E1E24BE5A006B074F /* IrucaTests.swift */; };
+		7ADE277A1E24C127006B074F /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADE27791E24C127006B074F /* BorderButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7ADE276B1E24BE5A006B074F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7ADE274E1E24BE5A006B074F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7ADE27551E24BE5A006B074F;
+			remoteInfo = Iruca;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7ADE27561E24BE5A006B074F /* Iruca.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Iruca.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ADE27591E24BE5A006B074F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7ADE275B1E24BE5A006B074F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7ADE275E1E24BE5A006B074F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7ADE27601E24BE5A006B074F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7ADE27631E24BE5A006B074F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7ADE27651E24BE5A006B074F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7ADE276A1E24BE5A006B074F /* IrucaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IrucaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ADE276E1E24BE5A006B074F /* IrucaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IrucaTests.swift; sourceTree = "<group>"; };
+		7ADE27701E24BE5A006B074F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7ADE27791E24C127006B074F /* BorderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7ADE27531E24BE5A006B074F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7ADE27671E24BE5A006B074F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7ADE274D1E24BE5A006B074F = {
+			isa = PBXGroup;
+			children = (
+				7ADE27581E24BE5A006B074F /* Iruca */,
+				7ADE276D1E24BE5A006B074F /* IrucaTests */,
+				7ADE27571E24BE5A006B074F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7ADE27571E24BE5A006B074F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7ADE27561E24BE5A006B074F /* Iruca.app */,
+				7ADE276A1E24BE5A006B074F /* IrucaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7ADE27581E24BE5A006B074F /* Iruca */ = {
+			isa = PBXGroup;
+			children = (
+				7ADE27591E24BE5A006B074F /* AppDelegate.swift */,
+				7ADE275B1E24BE5A006B074F /* ViewController.swift */,
+				7ADE275D1E24BE5A006B074F /* Main.storyboard */,
+				7ADE27601E24BE5A006B074F /* Assets.xcassets */,
+				7ADE27621E24BE5A006B074F /* LaunchScreen.storyboard */,
+				7ADE27651E24BE5A006B074F /* Info.plist */,
+				7ADE27791E24C127006B074F /* BorderButton.swift */,
+			);
+			path = Iruca;
+			sourceTree = "<group>";
+		};
+		7ADE276D1E24BE5A006B074F /* IrucaTests */ = {
+			isa = PBXGroup;
+			children = (
+				7ADE276E1E24BE5A006B074F /* IrucaTests.swift */,
+				7ADE27701E24BE5A006B074F /* Info.plist */,
+			);
+			path = IrucaTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7ADE27551E24BE5A006B074F /* Iruca */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7ADE27731E24BE5A006B074F /* Build configuration list for PBXNativeTarget "Iruca" */;
+			buildPhases = (
+				7ADE27521E24BE5A006B074F /* Sources */,
+				7ADE27531E24BE5A006B074F /* Frameworks */,
+				7ADE27541E24BE5A006B074F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Iruca;
+			productName = Iruca;
+			productReference = 7ADE27561E24BE5A006B074F /* Iruca.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7ADE27691E24BE5A006B074F /* IrucaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7ADE27761E24BE5A006B074F /* Build configuration list for PBXNativeTarget "IrucaTests" */;
+			buildPhases = (
+				7ADE27661E24BE5A006B074F /* Sources */,
+				7ADE27671E24BE5A006B074F /* Frameworks */,
+				7ADE27681E24BE5A006B074F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7ADE276C1E24BE5A006B074F /* PBXTargetDependency */,
+			);
+			name = IrucaTests;
+			productName = IrucaTests;
+			productReference = 7ADE276A1E24BE5A006B074F /* IrucaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7ADE274E1E24BE5A006B074F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Tagbangers,inc.";
+				TargetAttributes = {
+					7ADE27551E24BE5A006B074F = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = D9UZ289C7L;
+						ProvisioningStyle = Automatic;
+					};
+					7ADE27691E24BE5A006B074F = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = D9UZ289C7L;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7ADE27551E24BE5A006B074F;
+					};
+				};
+			};
+			buildConfigurationList = 7ADE27511E24BE5A006B074F /* Build configuration list for PBXProject "Iruca" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7ADE274D1E24BE5A006B074F;
+			productRefGroup = 7ADE27571E24BE5A006B074F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7ADE27551E24BE5A006B074F /* Iruca */,
+				7ADE27691E24BE5A006B074F /* IrucaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7ADE27541E24BE5A006B074F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ADE27641E24BE5A006B074F /* LaunchScreen.storyboard in Resources */,
+				7ADE27611E24BE5A006B074F /* Assets.xcassets in Resources */,
+				7ADE275F1E24BE5A006B074F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7ADE27681E24BE5A006B074F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7ADE27521E24BE5A006B074F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ADE275C1E24BE5A006B074F /* ViewController.swift in Sources */,
+				7ADE275A1E24BE5A006B074F /* AppDelegate.swift in Sources */,
+				7ADE277A1E24C127006B074F /* BorderButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7ADE27661E24BE5A006B074F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ADE276F1E24BE5A006B074F /* IrucaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7ADE276C1E24BE5A006B074F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7ADE27551E24BE5A006B074F /* Iruca */;
+			targetProxy = 7ADE276B1E24BE5A006B074F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7ADE275D1E24BE5A006B074F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7ADE275E1E24BE5A006B074F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7ADE27621E24BE5A006B074F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7ADE27631E24BE5A006B074F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7ADE27711E24BE5A006B074F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7ADE27721E24BE5A006B074F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7ADE27741E24BE5A006B074F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D9UZ289C7L;
+				INFOPLIST_FILE = Iruca/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.tagbangers.Iruca;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		7ADE27751E24BE5A006B074F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D9UZ289C7L;
+				INFOPLIST_FILE = Iruca/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.tagbangers.Iruca;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		7ADE27771E24BE5A006B074F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = D9UZ289C7L;
+				INFOPLIST_FILE = IrucaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.tagbangers.IrucaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Iruca.app/Iruca";
+			};
+			name = Debug;
+		};
+		7ADE27781E24BE5A006B074F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = D9UZ289C7L;
+				INFOPLIST_FILE = IrucaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.tagbangers.IrucaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Iruca.app/Iruca";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7ADE27511E24BE5A006B074F /* Build configuration list for PBXProject "Iruca" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7ADE27711E24BE5A006B074F /* Debug */,
+				7ADE27721E24BE5A006B074F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7ADE27731E24BE5A006B074F /* Build configuration list for PBXNativeTarget "Iruca" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7ADE27741E24BE5A006B074F /* Debug */,
+				7ADE27751E24BE5A006B074F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7ADE27761E24BE5A006B074F /* Build configuration list for PBXNativeTarget "IrucaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7ADE27771E24BE5A006B074F /* Debug */,
+				7ADE27781E24BE5A006B074F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7ADE274E1E24BE5A006B074F /* Project object */;
+}

@@ -4,4 +4,5 @@ use_frameworks!
 
 target 'Iruca' do
   pod 'Alamofire', '~> 4.0'
+  pod 'CRToast', '~> 0.0.7'
 end

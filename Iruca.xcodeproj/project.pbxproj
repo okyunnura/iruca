@@ -15,6 +15,7 @@
 		7ADE27641E24BE5A006B074F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ADE27621E24BE5A006B074F /* LaunchScreen.storyboard */; };
 		7ADE276F1E24BE5A006B074F /* IrucaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADE276E1E24BE5A006B074F /* IrucaTests.swift */; };
 		7ADE277A1E24C127006B074F /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADE27791E24C127006B074F /* BorderButton.swift */; };
+		E952ADC21E25A07E00C54692 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E952ADC11E25A07E00C54692 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		7ADE27701E24BE5A006B074F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7ADE27791E24C127006B074F /* BorderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
 		D1E18588F7134D430B8A891E /* Pods-Iruca.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Iruca.release.xcconfig"; path = "Pods/Target Support Files/Pods-Iruca/Pods-Iruca.release.xcconfig"; sourceTree = "<group>"; };
+		E952ADC11E25A07E00C54692 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		F567DE50B8A3E378A969F6B5 /* Pods_Iruca.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Iruca.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -93,6 +95,7 @@
 				7ADE27621E24BE5A006B074F /* LaunchScreen.storyboard */,
 				7ADE27651E24BE5A006B074F /* Info.plist */,
 				7ADE27791E24C127006B074F /* BorderButton.swift */,
+				E952ADC11E25A07E00C54692 /* Settings.bundle */,
 			);
 			path = Iruca;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E952ADC21E25A07E00C54692 /* Settings.bundle in Resources */,
 				7ADE27641E24BE5A006B074F /* LaunchScreen.storyboard in Resources */,
 				7ADE27611E24BE5A006B074F /* Assets.xcassets in Resources */,
 				7ADE275F1E24BE5A006B074F /* Main.storyboard in Resources */,
@@ -493,6 +497,7 @@
 				7ADE27751E24BE5A006B074F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7ADE27761E24BE5A006B074F /* Build configuration list for PBXNativeTarget "IrucaTests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +506,7 @@
 				7ADE27781E24BE5A006B074F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

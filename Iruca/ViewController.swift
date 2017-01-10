@@ -39,8 +39,9 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
 	}
 
 	@IBAction func updateClick(_ sender: UIButton) {
-		let parameters: Parameters = ["name": "ken", "status": array[pickerView.selectedRow(inComponent: 0)]]
-		Alamofire.request("https://iruca.co/api/rooms/12ebc2b1-695b-4291-ba21-c8c948308ad7/members/2224", method: .put, parameters: parameters);
+		let ud = UserDefaults.standard
+		let parameters: Parameters = ["name": ud.string(forKey: "name_preference")!, "status": array[pickerView.selectedRow(inComponent: 0)]]
+		Alamofire.request("https://iruca.co/api/rooms/12ebc2b1-695b-4291-ba21-c8c948308ad7/members/"+ud.string(forKey: "id_preference")!, method: .put, parameters: parameters);
 	}
 
 }

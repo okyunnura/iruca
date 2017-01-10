@@ -40,8 +40,10 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
 
 	@IBAction func updateClick(_ sender: UIButton) {
 		let ud = UserDefaults.standard
+		let sample = ud.object(forKey: "name_preference");
+		let sample2 = ud.integer(forKey: "id_preference")
 		let parameters: Parameters = ["name": ud.string(forKey: "name_preference")!, "status": array[pickerView.selectedRow(inComponent: 0)]]
-		Alamofire.request("https://iruca.co/api/rooms/12ebc2b1-695b-4291-ba21-c8c948308ad7/members/"+ud.string(forKey: "id_preference")!, method: .put, parameters: parameters);
+		Alamofire.request("https://iruca.co/api/rooms/12ebc2b1-695b-4291-ba21-c8c948308ad7/members/" + ud.string(forKey: "id_preference")!, method: .put, parameters: parameters);
 	}
 
 }

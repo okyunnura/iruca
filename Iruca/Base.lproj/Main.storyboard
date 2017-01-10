@@ -23,7 +23,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rch-y3-WOe" customClass="BorderButton" customModule="Iruca" customModuleProvider="target">
                                 <rect key="frame" x="117" y="91" width="140" height="60"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="在席"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="5"/>
@@ -35,10 +35,13 @@
                                         <real key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="presenceClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pru-GQ-Ruy"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RWD-dU-zrK" customClass="BorderButton" customModule="Iruca" customModuleProvider="target">
                                 <rect key="frame" x="117" y="373" width="140" height="60"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="打ち合わせ中"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="5"/>
@@ -50,10 +53,13 @@
                                         <real key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="quittingClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pno-6q-dBY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ho-SR-HKk" customClass="BorderButton" customModule="Iruca" customModuleProvider="target">
                                 <rect key="frame" x="117" y="519" width="140" height="60"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="退社"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="5"/>
@@ -65,10 +71,13 @@
                                         <real key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="meetingClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TtJ-Cx-bpB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMl-Fq-TbL" customClass="BorderButton" customModule="Iruca" customModuleProvider="target">
                                 <rect key="frame" x="117" y="239" width="140" height="60"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="離席"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="5"/>
@@ -80,6 +89,9 @@
                                         <real key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="awayClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KJi-LM-h2t"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

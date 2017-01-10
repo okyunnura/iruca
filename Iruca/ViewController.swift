@@ -7,35 +7,41 @@
 //
 
 import UIKit
+import Alamofire
 
-class ViewController: UIViewController {
-	
+class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+
+	let array = ["在席", "離席", "取り込み中", "退社"]
+
+	@IBOutlet weak var pickerView: UIPickerView!
+
+	@IBOutlet weak var statusLabel: UILabel!
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		// Do any additional setup after loading the view, typically from a nib.
 	}
 
 	override func didReceiveMemoryWarning() {
 		super.didReceiveMemoryWarning()
 		// Dispose of any resources that can be recreated.
 	}
-	
-	
-	@IBAction func presenceClick(_ sender: UIButton) {
-		
-	}
-	
-	@IBAction func awayClick(_ sender: UIButton) {
-	}
-	
-	@IBAction func quittingClick(_ sender: UIButton) {
+
+	func numberOfComponents(in pickerView: UIPickerView) -> Int {
+		return 1;
 	}
 
-	@IBAction func meetingClick(_ sender: UIButton) {
+	func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+		return array.count;
 	}
-	
-	func apiCall(status:String){
-		
+
+	func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+		return array[row];
 	}
+
+	@IBAction func updateClick(_ sender: UIButton) {
+		let parameters: Parameters = ["name": "ken", "status": array[pickerView.selectedRow(inComponent: 0)]]
+		Alamofire.request("https://iruca.co/api/rooms/12ebc2b1-695b-4291-ba21-c8c948308ad7/members/2224", method: .put, parameters: parameters);
+	}
+
 }
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -25,8 +25,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rch-y3-WOe" customClass="BorderButton" customModule="Iruca" customModuleProvider="target">
                                 <rect key="frame" x="117" y="508" width="140" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="140" id="Mjq-4o-cmH"/>
-                                    <constraint firstAttribute="height" constant="60" id="RL8-c0-yee"/>
+                                    <constraint firstAttribute="height" constant="60" id="1kV-dO-wa3"/>
                                 </constraints>
                                 <state key="normal" title="更新"/>
                                 <userDefinedRuntimeAttributes>
@@ -44,30 +43,55 @@
                                     <action selector="updateClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E8U-Rx-E04"/>
                                 </connections>
                             </button>
-                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fpM-pM-sdl">
-                                <rect key="frame" x="0.0" y="61" width="375" height="360"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="375" id="JX1-LF-oMM"/>
-                                    <constraint firstAttribute="height" constant="216" id="Pif-rZ-Pp0"/>
-                                </constraints>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fpM-pM-sdl">
+                                <rect key="frame" x="0.0" y="42" width="375" height="216"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="yJt-li-Mph"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="iWx-OJ-Iy2"/>
                                 </connections>
                             </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ID" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MS0-GU-11b">
+                                <rect key="frame" x="16" y="425" width="121" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NAME" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="scb-BM-9fx">
+                                <rect key="frame" x="16" y="454" width="121" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="aaaa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lx7-o6-asr">
+                                <rect key="frame" x="145" y="425" width="214" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="bbbb" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAO-3X-PxV">
+                                <rect key="frame" x="145" y="454" width="214" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="fpM-pM-sdl" secondAttribute="trailing" id="0kq-3U-1jn"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Rch-y3-WOe" secondAttribute="trailing" constant="102" id="OXP-Zu-lhT"/>
-                            <constraint firstItem="Rch-y3-WOe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="101" id="P9F-mn-F4C"/>
-                            <constraint firstItem="Rch-y3-WOe" firstAttribute="top" secondItem="fpM-pM-sdl" secondAttribute="bottom" constant="177" id="SAD-sm-0Wz"/>
-                            <constraint firstItem="fpM-pM-sdl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VgP-03-H5U"/>
-                            <constraint firstItem="fpM-pM-sdl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="95" id="bWC-Pq-s9Z"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Rch-y3-WOe" secondAttribute="bottom" constant="99" id="uKA-cx-C8S"/>
+                            <constraint firstItem="fpM-pM-sdl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="22" id="4kl-dn-hOr"/>
+                            <constraint firstItem="Rch-y3-WOe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="101" id="L1M-ZB-HZf"/>
+                            <constraint firstAttribute="trailing" secondItem="fpM-pM-sdl" secondAttribute="trailing" id="cIs-K7-WC5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Rch-y3-WOe" secondAttribute="trailing" constant="102" id="gBp-bi-Xef"/>
+                            <constraint firstItem="fpM-pM-sdl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hY8-Ns-eS5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Rch-y3-WOe" secondAttribute="bottom" constant="99" id="vM8-Bv-919"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="idValueLabel" destination="Lx7-o6-asr" id="VTT-fn-hVv"/>
+                        <outlet property="nameValueLabel" destination="XAO-3X-PxV" id="CkK-Ia-8oW"/>
                         <outlet property="pickerView" destination="fpM-pM-sdl" id="f20-Z7-uuY"/>
                     </connections>
                 </viewController>

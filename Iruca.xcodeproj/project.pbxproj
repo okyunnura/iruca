@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		72D96181BCBF1FA6E6A44501 /* Pods_Iruca.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F567DE50B8A3E378A969F6B5 /* Pods_Iruca.framework */; };
+		7A5C3C4E1E25BD2300FB47E6 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7A5C3C4D1E25BD2300FB47E6 /* Settings.bundle */; };
 		7ADE275A1E24BE5A006B074F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADE27591E24BE5A006B074F /* AppDelegate.swift */; };
 		7ADE275C1E24BE5A006B074F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADE275B1E24BE5A006B074F /* ViewController.swift */; };
 		7ADE275F1E24BE5A006B074F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ADE275D1E24BE5A006B074F /* Main.storyboard */; };
@@ -15,7 +16,6 @@
 		7ADE27641E24BE5A006B074F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ADE27621E24BE5A006B074F /* LaunchScreen.storyboard */; };
 		7ADE276F1E24BE5A006B074F /* IrucaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADE276E1E24BE5A006B074F /* IrucaTests.swift */; };
 		7ADE277A1E24C127006B074F /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADE27791E24C127006B074F /* BorderButton.swift */; };
-		E952ADC21E25A07E00C54692 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E952ADC11E25A07E00C54692 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		01ABAB2DB3544A64B34BB7ED /* Pods-Iruca.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Iruca.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Iruca/Pods-Iruca.debug.xcconfig"; sourceTree = "<group>"; };
+		7A5C3C4D1E25BD2300FB47E6 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		7ADE27561E24BE5A006B074F /* Iruca.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Iruca.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ADE27591E24BE5A006B074F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7ADE275B1E24BE5A006B074F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,7 +43,6 @@
 		7ADE27701E24BE5A006B074F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7ADE27791E24C127006B074F /* BorderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
 		D1E18588F7134D430B8A891E /* Pods-Iruca.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Iruca.release.xcconfig"; path = "Pods/Target Support Files/Pods-Iruca/Pods-Iruca.release.xcconfig"; sourceTree = "<group>"; };
-		E952ADC11E25A07E00C54692 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		F567DE50B8A3E378A969F6B5 /* Pods_Iruca.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Iruca.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -95,7 +95,7 @@
 				7ADE27621E24BE5A006B074F /* LaunchScreen.storyboard */,
 				7ADE27651E24BE5A006B074F /* Info.plist */,
 				7ADE27791E24C127006B074F /* BorderButton.swift */,
-				E952ADC11E25A07E00C54692 /* Settings.bundle */,
+				7A5C3C4D1E25BD2300FB47E6 /* Settings.bundle */,
 			);
 			path = Iruca;
 			sourceTree = "<group>";
@@ -214,8 +214,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E952ADC21E25A07E00C54692 /* Settings.bundle in Resources */,
 				7ADE27641E24BE5A006B074F /* LaunchScreen.storyboard in Resources */,
+				7A5C3C4E1E25BD2300FB47E6 /* Settings.bundle in Resources */,
 				7ADE27611E24BE5A006B074F /* Assets.xcassets in Resources */,
 				7ADE275F1E24BE5A006B074F /* Main.storyboard in Resources */,
 			);

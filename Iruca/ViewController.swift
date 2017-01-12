@@ -14,7 +14,7 @@ import SVProgressHUD
 class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 	private let logger = XCGLogger.default
 
-	let array = ["在席", "離席", "取り込み中", "退社"]
+	let array = ["在席","離席","外出","休暇","電話中","打ち合わせ中","退社"]
 
 	@IBOutlet weak var pickerView: UIPickerView!
 
@@ -78,14 +78,26 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
 			SVProgressHUD.showError(withStatus: "未設定の項目があります")
 			return;
 		}
-
-		let parameters: Parameters = ["name": ud.string(forKey: "name_preference")!, "status": array[pickerView.selectedRow(inComponent: 0)]]
+		
+		let selected = pickerView.selectedRow(inComponent: 0);
+		let parameters: Parameters = ["name": ud.string(forKey: "name_preference")!, "status": array[selected]]
 		Alamofire.request("https://iruca.co/api/rooms/12ebc2b1-695b-4291-ba21-c8c948308ad7/members/" + ud.string(forKey: "id_preference")!, method: .put, parameters: parameters)
 				.response { response in
 					if (response.response?.statusCode != 200 || response.error != nil) {
 						SVProgressHUD.showError(withStatus:"エラー")
 					} else {
 						SVProgressHUD.showSuccess(withStatus:"成功!")
+						
+						switch selected{
+						case 0:
+							self.pickerView.selectRow(1, inComponent: 0, animated: true)
+							break
+						case 1:
+							self.pickerView.selectRow(0, inComponent: 0, animated: true)
+							break
+						default:
+							break
+						}
 					}
 				}
 	}

@@ -14,14 +14,14 @@ import SVProgressHUD
 class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 	private let logger = XCGLogger.default
 
-	let array = ["在席","離席","外出","休暇","電話中","打ち合わせ中","退社"]
+	let array = ["在席", "離席", "外出", "休暇", "電話中", "打ち合わせ中", "退社"]
 
 	@IBOutlet weak var pickerView: UIPickerView!
 
 	@IBOutlet weak var idValueLabel: UILabel!
 
 	@IBOutlet weak var nameValueLabel: UILabel!
-	
+
 	@IBOutlet weak var messageTextField: UITextField!
 
 	override func viewDidLoad() {
@@ -43,6 +43,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
 		initViews();
 	}
 
+
 	func initViews() {
 		let ud = UserDefaults.standard
 		let id = ud.integer(forKey: "id_preference")
@@ -50,6 +51,14 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
 
 		idValueLabel.text = id <= 0 ? "未設定" : String(id);
 		nameValueLabel.text = name == nil || (name?.isEmpty)! ? "未設定" : name;
+	}
+
+	@IBAction func onReturnEvent(_ sender: UITextField) {
+		sender.resignFirstResponder()
+	}
+
+	@IBAction func onSingleTapEvent(_ sender: UITapGestureRecognizer) {
+		self.view.endEditing(true)
 	}
 
 	override func didReceiveMemoryWarning() {
@@ -72,7 +81,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
 		let ud = UserDefaults.standard
 		let id = ud.integer(forKey: "id_preference")
 		let name = ud.string(forKey: "name_preference");
-		
+
 		SVProgressHUD.setDefaultStyle(SVProgressHUDStyle.dark)
 		SVProgressHUD.show();
 
@@ -80,27 +89,27 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
 			SVProgressHUD.showError(withStatus: "未設定の項目があります")
 			return;
 		}
-		
+
 		let selected = pickerView.selectedRow(inComponent: 0);
 		let message = messageTextField.text;
 		var parameters: Parameters = [
-			"name": ud.string(forKey: "name_preference")!,
-			"status": array[selected]
+				"name": ud.string(forKey: "name_preference")!,
+				"status": array[selected]
 		]
-		
-		if(message != nil && !(message?.isEmpty)!){
+
+		if (message != nil && !(message?.isEmpty)!) {
 			parameters["message"] = message
 		}
-		
+
 		Alamofire.request("https://iruca.co/api/rooms/12ebc2b1-695b-4291-ba21-c8c948308ad7/members/" + ud.string(forKey: "id_preference")!, method: .put, parameters: parameters)
 				.response { response in
 					if (response.response?.statusCode != 200 || response.error != nil) {
-						SVProgressHUD.showError(withStatus:"エラー")
+						SVProgressHUD.showError(withStatus: "エラー")
 					} else {
-						SVProgressHUD.showSuccess(withStatus:"成功!")
+						SVProgressHUD.showSuccess(withStatus: "成功!")
 						self.messageTextField.text = "";
-						
-						switch selected{
+
+						switch selected {
 						case 0:
 							self.pickerView.selectRow(1, inComponent: 0, animated: true)
 							break

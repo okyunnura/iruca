@@ -84,6 +84,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="onReturnEvent:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="CSD-fZ-4Z9"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MESSAGE" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0mw-s7-spF">
                                 <rect key="frame" x="16" y="392" width="121" height="21"/>
@@ -94,6 +97,7 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="fpM-pM-sdl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="22" id="4kl-dn-hOr"/>
                             <constraint firstItem="Rch-y3-WOe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="101" id="L1M-ZB-HZf"/>
@@ -102,6 +106,9 @@
                             <constraint firstItem="fpM-pM-sdl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hY8-Ns-eS5"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Rch-y3-WOe" secondAttribute="bottom" constant="99" id="vM8-Bv-919"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Rq0-bl-tan" appends="YES" id="JTb-Pk-cMm"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="idValueLabel" destination="Lx7-o6-asr" id="VTT-fn-hVv"/>
@@ -111,6 +118,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Rq0-bl-tan">
+                    <connections>
+                        <action selector="onSingleTapEvent:" destination="BYZ-38-t0r" id="W5m-fv-HEJ"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
         </scene>

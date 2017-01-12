@@ -8,8 +8,8 @@
 
 import UIKit
 import Alamofire
-import CRToast
 import XCGLogger
+import SVProgressHUD
 
 class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 	private let logger = XCGLogger.default
@@ -70,17 +70,12 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
 		let ud = UserDefaults.standard
 		let id = ud.integer(forKey: "id_preference")
 		let name = ud.string(forKey: "name_preference");
+		
+		SVProgressHUD.setDefaultStyle(SVProgressHUDStyle.dark)
+		SVProgressHUD.show();
 
 		if (id <= 0 || name == nil || (name?.isEmpty)!) {
-			let obtions = [
-					kCRToastTextKey: "未設定な項目があります",
-					kCRToastBackgroundColorKey: UIColor.yellow,
-					kCRToastNotificationTypeKey: 2 as NSNumber,
-					kCRToastNotificationPreferredHeightKey: 50 as NSNumber,
-					kCRToastAnimationInDirectionKey: 0 as NSNumber,
-					kCRToastAnimationOutDirectionKey: 0 as NSNumber,
-			] as [String: Any]
-			CRToastManager.showNotification(options: obtions, completionBlock: nil)
+			SVProgressHUD.showError(withStatus: "未設定の項目があります")
 			return;
 		}
 
@@ -88,25 +83,9 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
 		Alamofire.request("https://iruca.co/api/rooms/12ebc2b1-695b-4291-ba21-c8c948308ad7/members/" + ud.string(forKey: "id_preference")!, method: .put, parameters: parameters)
 				.response { response in
 					if (response.response?.statusCode != 200 || response.error != nil) {
-						let obtions = [
-								kCRToastTextKey: "error",
-								kCRToastBackgroundColorKey: UIColor.red,
-								kCRToastNotificationTypeKey: 2 as NSNumber,
-								kCRToastNotificationPreferredHeightKey: 50 as NSNumber,
-								kCRToastAnimationInDirectionKey: 0 as NSNumber,
-								kCRToastAnimationOutDirectionKey: 0 as NSNumber,
-						] as [String: Any]
-						CRToastManager.showNotification(options: obtions, completionBlock: nil)
+						SVProgressHUD.showError(withStatus:"エラー")
 					} else {
-						let obtions = [
-								kCRToastTextKey: "complete",
-								kCRToastBackgroundColorKey: UIColor.green,
-								kCRToastNotificationTypeKey: 2 as NSNumber,
-								kCRToastNotificationPreferredHeightKey: 50 as NSNumber,
-								kCRToastAnimationInDirectionKey: 0 as NSNumber,
-								kCRToastAnimationOutDirectionKey: 0 as NSNumber,
-						] as [String: Any]
-						CRToastManager.showNotification(options: obtions, completionBlock: nil)
+						SVProgressHUD.showSuccess(withStatus:"成功!")
 					}
 				}
 	}

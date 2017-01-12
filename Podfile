@@ -7,7 +7,6 @@ target 'Iruca' do
 
   # Pods for Iruca
   pod 'Alamofire', '~> 4.0'
-  pod 'CRToast', '~> 0.0.9'
   pod 'XCGLogger', '~> 4.0.0'
-
+  pod 'SVProgressHUD', '~> 2.1.2'
 end

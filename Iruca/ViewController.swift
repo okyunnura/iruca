@@ -21,6 +21,8 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
 	@IBOutlet weak var idValueLabel: UILabel!
 
 	@IBOutlet weak var nameValueLabel: UILabel!
+	
+	@IBOutlet weak var messageTextField: UITextField!
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -80,13 +82,23 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
 		}
 		
 		let selected = pickerView.selectedRow(inComponent: 0);
-		let parameters: Parameters = ["name": ud.string(forKey: "name_preference")!, "status": array[selected]]
+		let message = messageTextField.text;
+		var parameters: Parameters = [
+			"name": ud.string(forKey: "name_preference")!,
+			"status": array[selected]
+		]
+		
+		if(message != nil && !(message?.isEmpty)!){
+			parameters["message"] = message
+		}
+		
 		Alamofire.request("https://iruca.co/api/rooms/12ebc2b1-695b-4291-ba21-c8c948308ad7/members/" + ud.string(forKey: "id_preference")!, method: .put, parameters: parameters)
 				.response { response in
 					if (response.response?.statusCode != 200 || response.error != nil) {
 						SVProgressHUD.showError(withStatus:"エラー")
 					} else {
 						SVProgressHUD.showSuccess(withStatus:"成功!")
+						self.messageTextField.text = "";
 						
 						switch selected{
 						case 0:
